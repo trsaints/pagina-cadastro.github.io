@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/icons/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/form.css" />
+    <script src="./src/elements.js" defer></script>
+    <script src="./src/cpf_validation.js" defer></script>
+    <script src="./src/name_validation.js" defer></script>
+    <script src="./src/telephone_validation.js" defer></script>
+    <script src="./src/email_validation.js" defer></script>
+    <script src="./src/age_validation.js" defer></script>
+    <title>Faça Cadastro</title>
+  </head>
+  <body>
+    <main>
+      <form action="">
+        <fieldset>
+          <div class="line">
+            <label for="user-name" class="name-label">Nome</label>
+            <input
+              type="text"
+              id="user-name"
+              name="USER_NAME"
+              placeholder="Digite seu nome"
+              maxlength="10"
+            />
+          </div>
+
+          <div class="line">
+            <label for="user-tel" class="telephone-label">Telefone</label>
+            <input
+              type="tel"
+              name="USER_TEL"
+              id="user-tel"
+              placeholder="xx xxxxx-xxxx"
+            />
+          </div>
+
+          <div class="line">
+            <label for="user-id" class="uid-label">CPF</label>
+            <input
+              type="text"
+              name="USER_GOV_ID"
+              id="user-id"
+              placeholder="xxx.xxx.xxx-xx"
+              maxlength="11"
+            />
+          </div>
+
+          <div class="line">
+            <label for="user-email" class="email-label">Email</label>
+            <input
+              type="text"
+              name="USER_EMAIL"
+              id="user-email"
+              placeholder="exemplo@domínio"
+            />
+          </div>
+
+          <div class="line">
+            <p class="text-center">Sexo</p>
+            <div class="flex-between">
+              <div>
+                <label for="gender-male">Masculino</label>
+                <input type="radio" name="USER_GENDER" id="gender-male" />
+              </div>
+
+              <div>
+                <label for="gender-female">Feminino</label>
+                <input type="radio" name="USER_GENDER" id="gender-female" />
+              </div>
+            </div>
+          </div>
+
+          <div class="line flex-between">
+            <label for="user-birthdate" class="birthdate-label"
+              >Data de Nascimento</label
+            >
+            <input type="date" name="USER_BIRTHDATE" id="user-birthdate" />
+          </div>
+
+          <input type="submit" class="submit-btn" value="cadastre-me" />
+        </fieldset>
+      </form>
+
+      <aside class="banner">
+        <div class="expand-container">
+          <div class="expanding-wrapper">
+            <p class="banner-heading">
+              Milhares de jogos à sua espera, tudo em uma só conta.
+            </p>
+          </div>
+        </div>
+      </aside>
+    </main>
+  </body>
+</html>
