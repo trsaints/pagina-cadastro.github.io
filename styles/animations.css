@@ -1,0 +1,11 @@
+
+@keyframes typewritter {
+    from {
+        width: 0;
+        color: var(--crayola);
+    }
+    to {
+        width: 100%;
+        color: var(--crayola-l);
+    }
+}
